@@ -1,9 +1,4 @@
-export class FirstComponentComponent {
-  constructor(
-    public name: string,
-    public description: string,
-    public price: number,
-    public category: 'new' | 'featured',
-    public isAvailable: boolean
-  ) {}
+export enum CategoryName {
+  new = "new",
+  sale = "sale",
 }
