@@ -1,0 +1,5 @@
+<p>Product {{product?.name}}</p>
+<p>
+  <button *ngIf="!inCart" (click)="onAddToCart()">Buy</button>
+  <button *ngIf="inCart" (click)="removeFromCart()">Remove</button>
+</p>
