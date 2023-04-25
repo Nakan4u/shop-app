@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { ProductsServiceService } from '../products-service.service';
-import { ProductModel } from '../product-component/product-component.model'
+import { ProductsService } from '../products.service';
+import { ProductModel } from '../product-component/product-component.model';
 @Component({
   selector: 'app-product-list-component',
   templateUrl: './product-list-component.component.html',
@@ -9,7 +9,7 @@ import { ProductModel } from '../product-component/product-component.model'
 export class ProductListComponentComponent {
   products: ProductModel[] = [];
 
-  constructor(private productsService: ProductsServiceService) {}
+  constructor(private productsService: ProductsService) {}
 
   getProducts(): void {
     this.products = this.productsService.getProducts();

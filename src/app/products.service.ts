@@ -3,15 +3,16 @@ import { ProductModel } from './product-component/product-component.model';
 
 
 const products = [
-  {name: 'apple'},
-  {name: 'banana'},
+  {id: 1, name: 'apple'},
+  {id: 2, name: 'banana'},
+  {id: 3, name: 'orange'},
 ]
 
 @Injectable({
   providedIn: 'root'
 })
 
-export class ProductsServiceService {
+export class ProductsService {
   constructor() {}
 
   getProducts() : ProductModel[] {

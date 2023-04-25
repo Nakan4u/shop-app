@@ -1,0 +1,5 @@
+<h2>Cart list products:</h2>
+<div *ngIf="products.length; else emptylist">
+  <app-product-component *ngFor="let product of products; trackBy: trackById" [product]="product"></app-product-component>
+</div>
+<ng-template #emptylist>cart is empy</ng-template>
