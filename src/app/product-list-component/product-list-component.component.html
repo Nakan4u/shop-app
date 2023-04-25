@@ -1,3 +1,2 @@
 <p>product-list-component works!</p>
-<app-product-component [name]="'apple'"></app-product-component>
-<app-product-component [name]="'banana'"></app-product-component>
+<app-product-component *ngFor="let product of products" [name]="product.name"></app-product-component>
